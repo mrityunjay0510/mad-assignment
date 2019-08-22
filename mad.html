@@ -9,17 +9,16 @@
     <title>MAD</title>
 </head>
 <body>
-
-    <div  style="position: fixed; top: 0; width: 100%; height: 100%; z-index: -1;">
-            <video style="width:100%; height:100%" autoplay muted loop>
-                    <source src="../MAD Assignment/assets/videos/video.mp4" type="video/mp4">
+    <div  class="video_div">
+            <video id="background_video" autoplay muted loop>
+                    <source src="../mad-assignment/assets/videos/video.mp4" type="video/mp4">
                     Your browser does not support the video tag.
-                  </video>
+            </video>
     </div>
      <div class='container'>
         <header class="header">
                 <a href="#default" class="logo">
-                    <img src="../MAD Assignment/assets/images/logov2.png">
+                    <img src="../mad-assignment/assets/images/logov2.png">
                 </a>
                 <a class="active" href="#home">HOW IT WORK</a>
                 <a href="#contact">ABOUT</a>
@@ -29,17 +28,35 @@
                  <a href="#about">GET EARLY ACCESS</a>
                 </div>
         </header>
-        <main id="mainDiv">
-            <!-- <H6>I am Main</H6> -->
-            <svg height="500" width="500">
-                    <polyline points="0,80 0,40 200,40 200,300 0,300 0,120" style="fill:white;stroke:red;stroke-width:4" />
-                    Sorry, your browser does not support inline SVG.
+        <main id="maindiv">
+                <div class="mainInfo-container">
+                        <H2>
+                                Simplify your wealth management with
+                        </H2>
 
-                    https://www.w3schools.com/graphics/svg_polyline.asp
-            </svg>
+                        <div id="quality_div" class="qualities">
+
+                        </div>
+                        <div class="signup">
+                            <p>How does managing and enjoying your wealth wisely sount to you? </p>
+                             <p>  Sign-up and get an exclusive preview of the future of wealth management.</p>
+                            <input type="text" placeholder="Enter your e-mail address" name="emailtext">
+                        </div>
+                </div>
+            <!-- <svg height="500" width="700">
+                    <polyline points="0,100 0,40 600,40 600,400 0,400 0,350" style="fill:transparent;stroke:red;stroke-width:4" />
+                    Sorry, your browser does not support inline SVG.
+                    <foreignobject class="node" x="46" y="22" width="100" height="100">
+                        
+                            <div xmlns="http://www.w3.org/1999/xhtml" style="border:1px green solid">I'm a div inside a SVG.</div>                
+                    </foreignobject>
+            </svg> -->
+            
         </main>
         <footer>
-            <h3>I am Footer</h3>
+                <div id="license" class="contentinfo">
+                        <p>© 2016 Estelle Wealthy. All right reserved.</p>
+                      </div>
         </footer>
     </div>
 </body>
